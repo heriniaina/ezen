@@ -1,0 +1,113 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,400);
+
+body {
+    font: 400 15px/1.5 'Roboto', HelveticaNeue,Helvetica,Arial,sans-serif;
+    color: #333;
+    background-color: #F6F6F6;
+}
+
+a{
+    color: #43606A;
+}
+a:hover {
+    color: #03202A;
+}
+h1, h1 a, h2, h2 a {
+    
+    text-decoration: none;
+}
+
+#header {
+    background: #00AEEF;
+}
+
+#site-name a {
+    color: #fff;
+    text-decoration: none;
+}
+#site-slogan {
+    color: #fff;
+    font-family: serif;
+    font-style: italic;
+}
+
+#main-menu ul {
+    float: left;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #AAA;
+}
+
+#main-menu ul li a {
+    font-size: 18px;
+    color: #555;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+#main-menu ul li.last a {
+    margin: 0;
+}
+#page {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+div.block {
+    background-color: #eee;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+div.block h2 {
+    font-size: 15px;
+    margin: -10px;
+    padding: 5px 10px;
+    background-color: #D94105;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2.node-title {
+    font-size: 1.2em;
+}
+
+header p.submitted, header p.submitted a {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #03202A;
+}
+
+article ul.links a {
+    font-size: 0.9em;
+    color: #D94105;
+}
+
+article {margin-top: 10px;}
+article p {
+    margin-bottom: 0;
+}
+
+#forum table {width: 100%;}
